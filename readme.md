@@ -59,6 +59,8 @@ logs.critical('critical log message')
 ####Output:
 Logs are saved in file `my_logs.log`
 
+![Output](output1.jpg)
+
 ###Example 2
 ```python
 from logger import Logger
@@ -69,7 +71,6 @@ except ZeroDivisionError as zero:
     logs.warning("Can not divide by zero")
 ```
 Logs are saved in file `C192.log`
-![Output](output1.jpg)
 ```console
 WARNING : 2021-01-28 16:30:43,552 : C192 - Can not divide by zero
 ```
