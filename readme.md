@@ -22,12 +22,12 @@ from logger import Logger
 Valid thresholds
 
 | Acceptable threshold        | When it's used |
-| ------------- |:-------------:| 
-| DEBUG         |  Detailed information, typically of interest only when diagnosing problems.|
-| INFO          |  Confirmation that things are working as expected.|      
-| WARNING       |  An indication that something unexpected happened, or indicative of some problem in the near future (e.g. ‘disk space low’). The software is still working as expected. |
-| ERROR         |  Due to a more serious problem, the software has not been able to perform some function.|      
-| CRITICAL      |  A serious error, indicating that the program itself may be unable to continue running. |
+| -------------               |:-------------:| 
+| DEBUG                       |  Detailed information, typically of interest only when diagnosing problems.             |
+| INFO                        |  Confirmation that things are working as expected.                                      |      
+| WARNING                     |  An indication that something unexpected happened, or indicative of some problem in the near future (e.g. ‘disk space low’). The software is  still working as expected.                                                                                              |
+| ERROR                       |  Due to a more serious problem, the software has not been able to perform some function.|      
+| CRITICAL                    |  A serious error, indicating that the program itself may be unable to continue running. |
 
 ```python
 UCODE     = 'C-192'
@@ -43,7 +43,7 @@ logs.error('error log message')
 logs.critical('critical log message')
 ```
 
-###Example 1
+### Example 1
 ```python
 from logger import Logger
 logs=Logger('my_logs','Debug')
@@ -56,12 +56,12 @@ logs.error('error log message')
 logs.critical('critical log message')
 
 ```
-####Output:
+#### Output:
 Logs are saved in file `my_logs.log`
 
 ![Output](output1.jpg)
 
-###Example 2
+### Example 2
 ```python
 from logger import Logger
 logs=Logger('C192','warning')
