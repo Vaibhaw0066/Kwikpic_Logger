@@ -8,7 +8,7 @@
 > This logger is defined to serve the primary logging<br> 
 > Logs are being saved as **UCODE.log** in current directory
 
-######Requiremts
+###### Requiremts
 ```commandline
 pip install requirements.txt
 ```
